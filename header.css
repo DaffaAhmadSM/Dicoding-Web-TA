@@ -1,0 +1,43 @@
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 1vw;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header div {
+    margin: 0 2vw 0vw 2vw ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}

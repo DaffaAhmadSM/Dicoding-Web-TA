@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="footer.css" />
+
+    <style>
+      body {
+        font-family: 'Courier New', Courier, monospace;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #f7ebcb;
+        overflow-x: hidden;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div>
+        <div class="img-container">
+          <img src="avatar.webp" alt="" class="avatar" />
+        </div>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <article class="description">
+          <h2>About Me</h2>
+          <p>
+            I am a web developer with a strong foundation in HTML, CSS,
+            JavaScript, and PHP. I have experience with developing and
+            maintaining websites using Laravel, Vue, and Sveltekit frameworks,
+            and I am familiar with MySQL and PostgreSQL databases.
+          </p>
+        </article>
+        <aside class="side">
+          <img src="me.jpg" alt="A photo of me" class="profile-pic" />
+        </aside>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>
+          If you'd like to get in touch, feel free to reach out via email or
+          connect with me on LinkedIn.
+        </p>
+        <div class="social-links">
+          <!-- linkedin svg -->
+          <a
+            href="https://www.linkedin.com/in/daffahmad"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <img src="linkedin.svg" alt="LinkedIn Logo" width="60" height="60" />
+          </a>
+          <!-- email svg -->
+          <a
+            href="mailto:daffahmad@example.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Email"
+          >
+            <img src="gmail.svg" alt="Email Icon" width="60" height="60" />
+          </a>
+        </div>
+
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Daffa Ahmad. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

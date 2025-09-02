@@ -1,0 +1,132 @@
+main section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.profile-pic {
+    aspect-ratio: 4 / 6;
+    width: 40%;
+    object-fit: cover;
+     position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* create shadow effect around profile pic */
+
+#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    gap: 1vw;
+}
+
+#about .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+#about .side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.2em;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 1vw;
+    gap: 1vw;
+}
+
+#contact p {
+    font-size: 3em;
+    margin: 0;
+    width: 50%;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        padding-left: 5vw;
+        padding-right: 5vw;
+        text-align: center;
+        width: 90vw;
+    }
+
+    .profile-pic {
+        width: 60%;
+        margin-bottom: 2vh;
+    }
+
+    #about .description, #about .side {
+        font-size: 1em;
+    }
+
+    #contact p {
+        font-size: 2em;
+        width: 80%;
+    }
+
+    .social-links {
+        width: 80%;
+        gap: 4vw;
+    }
+    
+}
+
+@media screen and (max-width: 480px) {
+    #about {
+        gap: 4vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-grow: 0;
+        height: max-content;
+    }
+    .profile-pic {
+        width: 60%;
+    }
+
+    #about .description{
+        flex-grow: 0;
+    }
+
+    #about .side {
+        height: max-content;
+        padding: 0vw;
+    }
+
+    #contact p {
+        font-size: 1.5em;
+        width: 90%;
+    }
+
+    .social-links {
+        width: 90%;
+        gap: 6vw;
+    }
+    
+}
